@@ -9,8 +9,12 @@ Created on Sun Apr 25 19:23:33 2021
 import spotipy
 import tkinter as tk
 
-token = spotipy.util.prompt_for_user_token(username="pvtqqmad0m5cy9u18wasficu6",client_id='e441790dbf264ebd8f2d8d66b1a070bf',
-                           client_secret='39ecb39fda5d4afa8ead68459d80d4ce',redirect_uri="http://localhost:8080",scope="user-read-currently-playing")
+username= "fillurusername"
+client_id = "fillurclientid"
+client_secret='fillurclientsecret'
+
+token = spotipy.util.prompt_for_user_token(username=username,client_id=client_id,
+                           client_secret=client_secret,redirect_uri="http://localhost:8080",scope="user-read-currently-playing")
 
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
